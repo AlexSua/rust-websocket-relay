@@ -16,9 +16,9 @@
 
 
 </div>
-    <a href="https://github.com/othneildrew/Best-README-Template/issues">Report Bug</a>
+    <a href="https://github.com/AlexSua/rust-websocket-relay/issues">Report Bug</a>
     ·
-    <a href="https://github.com/othneildrew/Best-README-Template/issues">Request Feature</a>
+    <a href="https://github.com/AlexSua/rust-websocket-relay/issues">Request Feature</a>
   </p>
 </div>
 
