@@ -1,0 +1,17 @@
+[package]
+name = "rust-websocket-relay"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+actix = "0.13.0"
+actix-web = {version="4.1.0",features=["openssl"]}
+actix-web-actors = "4.1.0"
+clap = {version="3.2.17",features = ["derive"] }
+openssl = "0.10.40"
+
+[profile.dev]
+opt-level = 0
+
+[profile.release]
+opt-level = 3
