@@ -154,7 +154,7 @@ During the WebSocket connection, you can get the following messages from the ser
 * [ ] Decentralized architecture. Make the server a node that can be connected and synchronized with other nodes.
 * [ ] Add multi-user rooms.
 
-See the [open issues](https://github.com/othneildrew/Best-README-Template/issues) for a full list of proposed features (and known issues).
+See the [open issues](https://github.com/AlexSua/rust-websocket-relay/issues) for a full list of proposed features (and known issues).
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -205,8 +205,8 @@ Project Link: [https://github.com/AlexSua/rust-websocket-relay](https://github.c
 [issues-shield]: https://img.shields.io/github/issues/AlexSua/rust-websocket-relay?style=flat-square
 [issues-url]: https://github.com/AlexSua/rust-websocket-relay/issues
 
-[license-shield]: https://img.shields.io/github/license/othneildrew/Best-README-Template.svg?style=flat-square
-[license-url]: https://github.com/othneildrew/Best-README-Template/blob/master/LICENSE.txt
+[license-shield]: https://img.shields.io/github/license/AlexSua/rust-websocket-relay?style=flat-square
+[license-url]: https://github.com/AlexSua/rust-websocket-relay/blob/master/LICENSE.txt
 
 [rust-shield]: https://img.shields.io/badge/rust-000000?style=for-the-badge&logo=rust&logoColor=white
 [rust-url]: https://www.rust-lang.org
