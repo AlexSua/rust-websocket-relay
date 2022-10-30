@@ -166,8 +166,6 @@ Distributed under the MIT License. See `LICENSE.txt` for more information.
 <!-- CONTACT -->
 ## Contact
 
-Alejandro Suárez - alejandrosuarez.eu@gmail.com
-
 Project Link: [https://github.com/AlexSua/rust-websocket-relay](https://github.com/AlexSua/rust-websocket-relay)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
