@@ -1,5 +1,5 @@
-use std::{net::IpAddr, path::PathBuf};
 use clap::{Parser, Subcommand};
+use std::{net::IpAddr, path::PathBuf};
 
 #[derive(Subcommand)]
 pub enum Commands {
@@ -26,9 +26,9 @@ pub struct Cli {
     #[clap(short,long,value_parser = clap::value_parser!(u16).range(1..), default_value_t=8080)]
     pub port: u16,
 
-	/// Path where the server will be listening
-	#[clap(short,long,value_parser)]
-	pub scope: Option<String>,
+    /// Path where the server will be listening
+    #[clap(short, long, value_parser)]
+    pub scope: Option<String>,
 
     #[clap(subcommand)]
     pub command: Option<Commands>,

@@ -1,6 +1,5 @@
 mod cli;
 mod lock_traits;
-mod utils;
 mod web_server;
 
 use cli::parse_arguments;

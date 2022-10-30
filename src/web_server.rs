@@ -1,6 +1,6 @@
 mod controller;
-mod websocket;
 mod models;
+mod websocket;
 
 use std::{
     collections::HashMap,
@@ -25,16 +25,17 @@ pub async fn web_server_start(cli: &Cli) -> std::io::Result<()> {
         None => "".to_owned(),
     };
 
-
-	let uri_cli_param_clone = uri_cli_param.clone();
+    let uri_cli_param_clone = uri_cli_param.clone();
     let mut http_server = HttpServer::new(move || {
         App::new()
             .app_data(web::Data::new(MyData {
                 channels: channels.clone(),
             }))
-            .service(web::scope(uri_cli_param_clone.as_str()).service(controller::websocket_handler))
+            .service(
+                web::scope(uri_cli_param_clone.as_str()).service(controller::websocket_handler),
+            )
     });
-
+    
     match &cli.command {
         Some(Commands::Ssl {
             certificate_path,
@@ -64,10 +65,10 @@ pub async fn web_server_start(cli: &Cli) -> std::io::Result<()> {
         websocket_extension = "wss://";
     }
 
-	if uri_cli_param.starts_with("/") && uri_cli_param!="/"{
-		uri_cli_param.remove(0);
-	}
-	
+    if uri_cli_param.starts_with("/") && uri_cli_param != "/" {
+        uri_cli_param.remove(0);
+    }
+
     println!(
         "- Websocket url: {}{}:{}/{}<id>",
         websocket_extension, cli.ip, cli.port, uri_cli_param
