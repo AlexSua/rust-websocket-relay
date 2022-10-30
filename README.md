@@ -2,7 +2,7 @@
 <!-- PROJECT LOGO -->
 <div align="center">
 
-<h1 align="center">rust-websocket-relay</h2>
+<h1 align="center">rust-websocket-relay</h1>
 
   <p align="center">
     A lightweight and resource-friendly relay server to easily communicate two applications using WebSockets.
