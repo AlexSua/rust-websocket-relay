@@ -97,8 +97,8 @@ impl StreamHandler<Result<ws::Message, ws::ProtocolError>> for MyWs {
             }
             Ok(ws::Message::Binary(bin)) => ctx.binary(bin),
             Ok(ws::Message::Close(reason)) => {
+                ctx.close(reason);
                 self.finished(ctx);
-                ctx.close(reason)
             }
             _ => (),
         }
@@ -119,6 +119,6 @@ impl StreamHandler<Result<ws::Message, ws::ProtocolError>> for MyWs {
                 channelsguard.remove(self.room_id.as_str());
             });
         }
-        ctx.stop();
+        ctx.terminate();
     }
 }
